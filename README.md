@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔐 Resilient Cybersecurity in Smart Grid ICS Communication
+#  Resilient Cybersecurity in Smart Grid ICS Communication
 
 **A production-grade, multi-layered security framework for Industrial Control Systems in smart grid infrastructure — combining AES-256 encryption, ML-driven intrusion detection, and cryptographic resilience testing against real-world IEC 104 traffic.**
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🌐 The Problem
+##  The Problem
 
 Modern power grids, water treatment plants, and manufacturing facilities rely on **Industrial Control Systems (ICS)** communicating over the **IEC 60870-5-104 (IEC 104)** protocol — a standard born in an era before cybersecurity was a design concern. Today, these same systems are prime targets for nation-state actors and ransomware groups.
 
@@ -31,7 +31,7 @@ This project builds exactly that — a **complete, end-to-end security stack** f
 
 ---
 
-## 🎯 The Solution
+##  The Solution
 
 A four-pillar security architecture purpose-built for ICS environments:
 
@@ -44,23 +44,23 @@ A four-pillar security architecture purpose-built for ICS environments:
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🔒 Dynamic AES-256 Encryption Engine
+###  Dynamic AES-256 Encryption Engine
 - **Time-based key generation**: Keys derived from UTC timestamps (minute-granularity) — eliminating static key vulnerabilities
 - **BLAKE3 key hardening**: Raw time-keys are hashed with BLAKE3 before use, preventing temporal prediction attacks
 - **Automatic key rotation**: Scheduled task regenerates and replaces the encryption key every 60 seconds
 - **Zero-retention policy**: Old keys purged immediately upon rotation (MAX_KEYS = 1)
 - **PKCS7 padding + CBC mode**: Full block-cipher security for variable-length ICS payloads
 
-### 🤖 XGBoost Intrusion Detection System
+###  XGBoost Intrusion Detection System
 - **411,474 network traffic samples** across 7 classes (normal + 6 attack types)
 - **SMOTE oversampling** to resolve severe class imbalance between normal and attack traffic
 - **Euclidean distance validation** confirms normal traffic transformation preserves distribution integrity
 - **Real-time monitoring loop**: Processes live traffic streams with per-packet prediction + confidence scoring
 - **Structured logging**: Every alert timestamped and written to `ids_log.log` for audit trails
 
-### 📊 Multi-Model ML Benchmark Suite
+###  Multi-Model ML Benchmark Suite
 Six classifiers evaluated on identical datasets for comparative analysis:
 
 | Classifier | Key Strength |
@@ -72,7 +72,7 @@ Six classifiers evaluated on identical datasets for comparative analysis:
 | LightGBM | High-speed training on large datasets |
 | SVM | Strong on high-dimensional feature spaces |
 
-### 🛡️ Cryptographic Attack Resistance Suite
+###  Cryptographic Attack Resistance Suite
 End-to-end validation of the encryption scheme against all four classical attack classes:
 
 - **CCA (Chosen Ciphertext Attack)**: Verified — 372,801 unique blocks, **0 repeated blocks** detected
@@ -80,7 +80,7 @@ End-to-end validation of the encryption scheme against all four classical attack
 - **COA (Ciphertext Only Attack)**: Block entropy analysis validates ciphertext indistinguishability
 - **KPA (Known Plaintext Attack)**: Key recovery infeasibility demonstrated under known-plaintext scenarios
 
-### 🚨 Incident Response Simulation
+###  Incident Response Simulation
 Full IR lifecycle modeled and tested:
 - **Detection phase**: Automated anomaly identification via IDS
 - **Classification**: Attack categorization (DoS, injection, scanning, switching, rogue device, connection loss)
@@ -129,7 +129,7 @@ Resilient-Cybersecurity-in-Smart-Grid-ICS-Communication/
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -165,7 +165,7 @@ Resilient-Cybersecurity-in-Smart-Grid-ICS-Communication/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 This project uses the **BUT-IEC104-I** dataset from Brno University of Technology — one of the most comprehensive publicly available ICS/SCADA network traffic datasets.
 
@@ -184,7 +184,7 @@ This project uses the **BUT-IEC104-I** dataset from Brno University of Technolog
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -234,7 +234,7 @@ jupyter notebook
 
 ---
 
-## 🚀 Usage Examples
+##  Usage Examples
 
 ### Run the Encryption Pipeline
 
@@ -279,7 +279,7 @@ Repeated blocks: 0
 
 ---
 
-## 🔬 Technical Deep Dive
+##  Technical Deep Dive
 
 ### Why AES-256-CBC + BLAKE3?
 
@@ -304,15 +304,15 @@ The threat model is comprehensive: **DoS** and **scanning** represent network-la
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 
 All six classifiers are evaluated on identical 70/30 train-test splits with the same preprocessing pipeline. Metrics tracked: **Accuracy**, **Precision**, **Recall**, **F1-Score**, and **ROC-AUC**.
 
-> 📌 Run individual notebooks for full classification reports, confusion matrices, and ROC curve plots.
+>  Run individual notebooks for full classification reports, confusion matrices, and ROC curve plots.
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] **LSTM-based IDS**: Sequential modeling of IEC 104 command sequences for temporal anomaly detection
 - [ ] **Federated Learning**: Distributed IDS training across multiple substations without centralizing raw traffic
@@ -323,7 +323,7 @@ All six classifiers are evaluated on identical 70/30 train-test splits with the 
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -340,7 +340,7 @@ Please ensure:
 
 ---
 
-## 📚 Acknowledgements & References
+##  Acknowledgements & References
 
 - **Dataset**: BUT-IEC104-I — Brno University of Technology ICS/SCADA dataset
 - **Protocol**: IEC 60870-5-104 (Telecontrol equipment and systems)
@@ -349,9 +349,6 @@ Please ensure:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
