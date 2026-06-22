@@ -9,7 +9,6 @@
 [![XGBoost](https://img.shields.io/badge/XGBoost-ML%20Engine-FF6600?style=for-the-badge)](https://xgboost.readthedocs.io)
 [![AES-256](https://img.shields.io/badge/AES--256--CBC-Encryption-4CAF50?style=for-the-badge&logo=lock&logoColor=white)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 [![IEC 104](https://img.shields.io/badge/IEC%2060870--5--104-Protocol-0078D4?style=for-the-badge)](https://en.wikipedia.org/wiki/IEC_60870-5)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 </div>
 
